@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GnarpyAI param passer</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="shortcut icon" href="favi.svg" type="image/x-icon">
+</head>
+<body>
+    
+    <div id="mainContent">
+        <div class="flex">
+            <div>
+            <form id="characterForm">
+                <h2>Character</h2>
+                <div class="settingsTextBox">
+                    <textarea class="settingstextarea" id="charName" placeholder="Character Name" required></textarea>
+                </div>
+                <div class="settingsTextBox descContainer">
+                    <textarea class="settingstextarea" id="desc" placeholder="Description" required></textarea>
+                </div>
+    
+            </form>
+            <button type="submit">Start AI Chat</button>    
+
+            <button id="downloadCharacterBtn">Download Character</button>
+            <input type="file" id="uploadCharacterBtn" accept=".txt" />
+
+            </div>
+            <div>
+                <form>
+                <h2>User</h2>
+                <div class="settingsTextBox">
+                    <textarea class="settingstextarea" id="userName" placeholder="Your Name" required></textarea>
+                </div>
+                <div class="settingsTextBox descContainer">
+                    <textarea class="settingstextarea" id="userDesc" placeholder="Description" required></textarea>
+                </div>
+            </form>
+                <button id="downloadUserBtn">Download User</button>    
+                <input type="file" id="uploadUserBtn" accept=".txt" />
+
+            </div>
+        </div>
+    </div>
+    <center><button id="settingsOpen">Open Settings</button></center>
+    <script src="charSetup.js"></script>
+    <img src="images/cursor.png" id="cursor">
+    <div id="cursorAlt" style="position: absolute; width: 2px; height: 2px; background: red; border-radius: 50%; pointer-events: none;"></div>
+</body>
+</html>

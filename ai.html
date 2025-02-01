@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GnarpyAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favi.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="mainContent">
+        <h1 id="title">[[aiName]]</h1>
+        <div id="messageContainer">
+            
+        </div> 
+        <div id="textbox">
+            <textarea id="textarea"></textarea>
+            <img src="images/loading.png" width="64px" id="loadingCircle" >
+            <img src="images/send.png" id="sendButton">
+        </div>
+        <img src="images/settings.png" id="settings">
+    </div>
+    <div id="settingsBg">
+        <h1>Settings</h1>
+    
+        <p class="section-title">Base URL</p>
+        <div class="settingsTextBox">
+            <textarea class="settingstextarea" id="baseUrl" placeholder="Enter Base URL..."></textarea>
+        </div>
+    
+        <p class="section-title">API Key<br>
+            <small>You can get an API key from <a href="https://discord.gg/HYXBZ7HsMq">zukijourney's Discord Server</a></small>
+        </p>
+        <div class="settingsTextBox">
+            <textarea class="settingstextarea" id="apiKey" placeholder="Enter API Key..."></textarea>
+        </div>
+    
+        <p class="section-title">Model<br>
+            <small>You can get a Model List from <a href="https://docs.zukijourney.com/models">zukijourney's Website</a></small>
+        </p>
+        <div class="settingsTextBox">
+            <textarea class="settingstextarea" id="model" placeholder="Enter Model..."></textarea>
+        </div>
+    
+        <img src="images/reload.png" id="updateSettings" alt="Update Settings">
+        <img src="images/close.png" id="closeSettings" alt="Close Settings" class="visible">
+        <img src="images/close.png" id="closeSettingsAlt" alt="Close Settings Alternate">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
+    <img src="images/cursor.png" id="cursor">
+    <div id="cursorAlt" style="position: absolute; width: 2px; height: 2px; background: red; border-radius: 50%; pointer-events: none; z-index: 99999;"></div>
+</body>
+</html>
